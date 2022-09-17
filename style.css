@@ -1,7 +1,35 @@
-html {
-    background-color: #26073f;
+:root {
+    --dark-purple: #270b3f;
+    --dark-purple-trans: #270b3f53;
+    --white-purple: #f2d4f5;
+    --white-purple-trans: #f2d4f553;
 }
 
-h1 {
-    color: white;
+html {
+    background-color: var(--dark-purple);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white-purple);
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+}
+
+.socials a {
+    cursor: pointer;
+    text-decoration:none;
+    color: var(--white-purple);
+    padding-inline: 50px;
+    
+    /* border-width: 3px; */
+    /* border-style: dashed; */
+    /* border-color: white; */
+}
+
+.socials span {
+    font-size: 30pt;
+    transition: all 100ms ease;
+}
+
+.socials span:hover {
+    transform: scale(1.3);
 }
