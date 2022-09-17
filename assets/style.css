@@ -6,6 +6,8 @@
     --github: #ffffff;
     --linkedin: #3557c5;
     --twitter: #0099ff;
+    --resume: #f0ef92;
+    --email: #89ca79;
     --drop-blur: 3px;
 }
 
@@ -16,12 +18,28 @@ html {
     text-align: center;
 }
 
+body {
+    margin: 0;
+}
+
+h1 {
+    text-shadow: 0px 0px 4px var(--white-purple);
+}
+
+video {
+    /* background-color: #0099ff; */
+    border-radius: 15px;
+    /* border-width: 2px; */
+    /* border-color: white; */
+    /* border-style: solid; */
+    box-shadow: 0px 0px 15px var(--white-purple);
+}
+
 .socials a {
     display: inline;
-    cursor: pointer;
     text-decoration:none;
     color: var(--white-purple);
-    padding-inline: 50px;
+    padding-inline: 20px;
 }
 
 .socials svg {
@@ -48,4 +66,45 @@ html {
 #twitter:hover {
     color: var(--twitter);
     filter: drop-shadow(0px 0px var(--drop-blur) var(--twitter));
+}
+
+#resume:hover {
+    color: var(--resume);
+    filter: drop-shadow(0px 0px var(--drop-blur) var(--resume));
+}
+
+#email:hover {
+    color: var(--email);
+    filter: drop-shadow(0px 0px var(--drop-blur) var(--email));
+}
+
+.navbar {
+    /* display: flex; */
+    background-color: var(--white-purple-trans);
+    padding: 1rem;
+    margin-bottom: 20px;
+    /* margin-inline: 30vw; */
+}
+
+.navbar a {
+    cursor: pointer;
+    font-size: 15pt;
+    padding: 1rem;
+    transition: all 200ms ease;
+    filter:blur(1px)
+    /* padding-inline: 30px; */
+    /* background: var(--white-purple-trans); */
+}
+
+.navbar a:active {
+    filter: blur(0px);
+}
+
+.navbar a:target {
+    filter: blur(0px);
+}
+
+.navbar a:hover {
+    background: var(--white-purple-trans);
+    border-radius: 10px;
 }
