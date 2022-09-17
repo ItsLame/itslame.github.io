@@ -1,0 +1,51 @@
+:root {
+    --dark-purple: #270b3f;
+    --dark-purple-trans: #270b3f53;
+    --white-purple: #f6cafa;
+    --white-purple-trans: #f2d4f553;
+    --github: #ffffff;
+    --linkedin: #3557c5;
+    --twitter: #0099ff;
+    --drop-blur: 3px;
+}
+
+html {
+    background-color: var(--dark-purple);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white-purple);
+    text-align: center;
+}
+
+.socials a {
+    display: inline;
+    cursor: pointer;
+    text-decoration:none;
+    color: var(--white-purple);
+    padding-inline: 50px;
+}
+
+.socials svg {
+    height: 6ch;
+    /* filter: drop-shadow(0px 0px 5px var(--white-purple)); */
+    transition: all 100ms ease;
+}
+
+.socials svg:hover {
+    transform: scale(1.2);
+}
+
+#github:hover {
+    color: var(--github);
+    background-color: transparent;
+    filter: drop-shadow(0px 0px var(--drop-blur) var(--github));
+}
+
+#linkedin:hover {
+    color: var(--linkedin);
+    filter: drop-shadow(0px 0px var(--drop-blur) var(--linkedin));
+}
+
+#twitter:hover {
+    color: var(--twitter);
+    filter: drop-shadow(0px 0px var(--drop-blur) var(--twitter));
+}
